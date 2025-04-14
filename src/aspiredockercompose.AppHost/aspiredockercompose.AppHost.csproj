@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.2.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>bca46276-5180-4cd8-9796-673d04b4d7fc</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aspiredockercompose.ApiService\aspiredockercompose.ApiService.csproj" />
+    <ProjectReference Include="..\aspiredockercompose.Web\aspiredockercompose.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.2.0" />
+    <PackageReference Include="Aspire.Hosting.Docker" Version="9.2.0-preview.1.25209.2" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="9.2.0" />
+  </ItemGroup>
+
+</Project>
